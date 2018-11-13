@@ -15,12 +15,8 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  array.each do |call|
-    if call.length > 4
-      true
-    else
-      false
-    end
+  array.any? do |call|
+    call.length > 4
   end
 end
 
